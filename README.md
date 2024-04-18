@@ -1,71 +1,106 @@
-# TicTacToe 2.0 - Baghli Yacine - Rayer Clément
+## TicTacToe 2.0 - Baghli Yacine
 
-## Choix technique :
+### Project: TicTacToe 2.0
 
-Nous préférons la technique du Cloud gaming puisqu'elle permetterait aux différents utilisateurs de jouer à des jeux qui peuvent nécessiter une puissance de calcul assez conséquente sans avoir à utiliser des machines dotées de cette puissance de calcul mais uniquement d'une connexion internet stable.
+The objective was to create a networked game allowing two players to connect to a server and play matches, exchange messages, and use commands.
 
+### Technical Choices:
 
-## Concernant les fonctionnalité ajoutées :
+In this project, we preferred to use Cloud gaming technology as it would allow different users to play games that may require significant computational power without needing machines equipped with such power but only a stable internet connection.
 
-- Ajout d'une grille ainsi que certains messages expliquant le déroulement de la partie
+### Features of TicTacToe 2.0:
 
-- A la place des 1 et -1 on joue avec des X et des O, ajout de quelques messages expliquant le déroulement de la partie, ajout de lignes sur le plateau
+- Addition of a grid along with certain messages explaining the game's progress.
 
-- On ne peut pas replacer un symbole deux fois dans la meme case, on ne peut pas placer autre chose que des entiers pour le choix de lignes et de colonnes (gestion des inputs)
+- Instead of using 1 and -1, we use X and O. Added explanatory messages for the game's progress and added lines on the board.
 
-- Les joueurs peuvent au début de la partie choisir un pseudo
+- It's not possible to place a symbol twice in the same box, and only integers can be placed for the choice of rows and columns (input management).
 
-- Ajout des fonctionnalités "rejouer", "rejouer et remettre le score à zéro" et "quitter" qui s'afficheront sur un menu à la fin de chaque partie *(Les deux joueurs doivent se mettre d'accord sur le choix à faire en discutant grace à la commande /msg)*
+- Players can choose a nickname at the start of the game.
 
-- Ajout d'un score qui se met à jour à la fin de chaque partie et qui s'affiche à chaque début de partie
+- Added features for "play again," "play again and reset the score to zero," and "quit," which will be displayed on a menu at the end of each match *(Both players must agree on the choice by discussing using the /msg command)*.
 
-- Les résultats s'afficheront directement apres que l'un des deux joueurs ait gagné la partie
+- Added a score that updates at the end of each match and displays at the beginning of each match.
 
-- Messages personnalisés en fonction du pseudo des joueurs
+- Results are displayed directly after one of the players wins the match.
 
-- Ajout d'une fonctionnalité permettant de déstabiliser l'adversaire en lui envoyant un rickroll **(Il suffit d'utiliser la commande /msg comme expliqué dans la section "Commandes" puis d'appyer sur entrée puis de saisir "rickrollhim")**
+- Personalized messages based on the players' nicknames.
 
-- Ajout d'une fonctionnalité qui fait en sorte que chaque joueur ait 50% de chance de jouer en premier à chaque début de partie
+- Added a feature allowing players to unsettle their opponent by sending them a rickroll **(Simply use the /msg command as explained in the "Commands" section, then press enter, and enter "rickrollhim")**.
 
-- Ajout de différentes commandes
+- Added a feature where each player has a 50% chance of playing first at the beginning of each match.
 
-## Commandes :
-Il existe deux types de commandes :
+- Added a menu allowing the first player to choose to play solo or not. This player can wait for their opponent to connect by watching a documentary on black holes.
 
-### - Les commandes "faibles" :
+- Added weak and powerful commands.
 
-Pour qu'un joueur puisse utiliser ces dernières il lui suffit d'essayer de placer un symbole en (99;99). Ces commandes sont les suivantes :
+### Match Progression:
+At the start of the match, the first player must choose whether to play Solo(1) or Duo(2) via a menu.
 
-- */matchnul* : propose à l'adversaire si il accepte qu'aucun des deux joueurs ne gagne : 
-    -  Si l'adversaire répond "oui"; matchnul
-    -  Si l'adversaire répond "non"; les joueurs doivent continuer à jouer 
+#### Solo Match
 
-- */passe* : permet au joueur de passer son tour
+The player must then choose the difficulty level of their opponent. Each level has a specific gameplay strategy and a name representing its TicTacToe expertise level.
+The player must then enter their nickname.
 
-- */msg* : permet d'envoyer un message à l'adversaire **(entrez la commande /msg puis appyez sur entrée puis entrez votre message pour l'envoyer à votre adversaire)**
- 
-- */maisquefaitclement **(easter egg)*** : affiche une fenetre sur le serveur avec un texte et un titre
+The first turn is randomly assigned to either the player or the bot (the higher the bot's level, the more likely it is to play first). When it's the player's turn, they must choose a row and a column to place their symbol and can use commands during the match. Then it's the bot's turn and so on.
+The scores are displayed at the end of the match, and the player can choose to play again, play again and reset the scores to zero, or quit the game.
 
- - En entrant le mot "quit" à n'importe quel moment de la partie vous quitterez la partie
+The player can also quit the match at any time by typing "quit".
 
+#### Duo Match
 
-### - Les commandes "puissantes" :
+If the first player chooses to wait for the second player to connect, they can watch a documentary on black holes or just wait and sleep.
 
-Pour qu'un joueur puisse utiliser ces dernières il lui suffit d'essayer de placer un symbole en (49;3) 
+As soon as the second player connects, the match begins. The Duo match proceeds in the same way as a solo match, except that players can send messages to each other via commands and can troll each other.
 
-*(Toute ressemblance avec des faits et des personnages existants ou ayant existé serait purement fortuite et ne pourrait être que le fruit d'une pure coïncidence).*
+### Difficulty Levels:
 
-Ces commandes sont les suivantes :
+If you select the "Solo" game mode, you will be prompted to choose the bot's difficulty level.
+There are 4 different difficulty levels:
 
-- */jegagnesijeveux* : permet au joueur en question de gagner la partie
-	
-- */matchnul* : permet de forcer la nulle
+- Beginner: By choosing this level, the bot "Clément" will choose a box near the one played in the last turn. If there are no more boxes near this box, the bot switches to amateur mode for one turn.
 
-- */inverser* : permet d'inverser vos roles (si vous etes le joueur 1 et que votre symbole est X vous jouerez alors avec le symbole du joueur adverse : O) **(Si vous utilisez cette commande vous passerez également votre tour sinon c'est trop cheaté)**
+- Amateur: By choosing this level, the bot "Yacine" will randomly choose a valid and available box on the board.
 
-## Prochaine mise à jour :
-- Ajout d'une fonctionnalité qui permetterait au joueur de jouer en solo ; l'idéal serait qu'il puisse choisir un niveau de difficulté
-- Ajout d'un menu permettant au premier joueur de choisir de joueur en solo ou pas
+- Pro: By choosing this level, expect your opponent to have a real TicTacToe strategy, one of the best. Indeed, by choosing this level, the bot takes the name of one of the two inventors of the game.
+
+- Hacker: By choosing this level, the probability of winning the match tends to zero. The hacker has a one in four chance of winning each turn. If luck is on your side, you will still face an unbeatable opponent, well almost... Of course, against this player, you cannot use the commands from 49.3. Good luck...
+
+### Commands:
+There are two types of commands:
+
+#### - Weak Commands:
+
+To use these commands, a player just needs to try to place a symbol at (99;99). These commands are as follows:
+
+- */matchnul*: Proposes to the opponent if they agree that neither of the two players wins:
+    - If the opponent answers "yes"; matchnul
+    - If the opponent answers "no"; the players must continue playing
+
+- */passe*: Allows the player to pass their turn
+
+- */msg*: Allows sending a message to the opponent **(Enter the /msg command, then press enter, and enter your message to send it to your opponent)**
+
+- */maisquefaitclement **(easter egg)***: Displays a window on the server with a text and a title
+
+- By entering the word "quit" at any time during the match, you will leave the match.
+
+#### - Powerful Commands:
+
+To use these commands, a player just needs to try to place a symbol at (49;3)
+
+*(Any resemblance to actual events or characters, living or dead, would be purely coincidental).*
+
+- /jegagnesijeveux: Allows the player to win the match
+
+- /matchnul: Forces a draw
+
+- /inverser: Allows you to switch roles (if you are player 1 and your symbol is X, you will then play with the opponent's symbol: O) (If you use this command, you will also skip your turn otherwise it's too overpowered)
+
+(Any use of these commands is subject to fair play and mutual agreement between the players).
+
+### Conclusion:
+TicTacToe 2.0 represents an innovative approach to the classic game, offering enhanced features and interactions for players. Through the implementation of various difficulty levels, networked gameplay, and the addition of powerful commands, the game provides an engaging experience for both solo and duo players. This project not only demonstrates technical proficiency but also highlights the creativity and collaborative effort of the development team.
 
 
 *(J'ai eu l'occasion d'avancer entre les deux séances de TP (du 16/03 au 21/03) sur le tictactoe. J'ai pendant ce temps avancé sur le projet à rendre avant de passer à la question 2.2 j'ai continué par la suite à ajouter des fonctionnalités régulièrement)*
