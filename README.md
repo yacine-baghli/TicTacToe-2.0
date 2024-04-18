@@ -1,4 +1,4 @@
-## TicTacToe 2.0 - Baghli Yacine
+# TicTacToe 2.0 - Baghli Yacine
 
 ### Project: TicTacToe 2.0
 
