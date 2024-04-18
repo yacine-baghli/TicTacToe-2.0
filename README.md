@@ -101,8 +101,3 @@ To use these commands, a player just needs to try to place a symbol at (49;3)
 
 ### Conclusion:
 TicTacToe 2.0 represents an innovative approach to the classic game, offering enhanced features and interactions for players. Through the implementation of various difficulty levels, networked gameplay, and the addition of powerful commands, the game provides an engaging experience for both solo and duo players. This project not only demonstrates technical proficiency but also highlights the creativity and collaborative effort of the development team.
-
-
-*(J'ai eu l'occasion d'avancer entre les deux séances de TP (du 16/03 au 21/03) sur le tictactoe. J'ai pendant ce temps avancé sur le projet à rendre avant de passer à la question 2.2 j'ai continué par la suite à ajouter des fonctionnalités régulièrement)*
-
-Voila, merci de m'avoir lu - Baghli Yacine
