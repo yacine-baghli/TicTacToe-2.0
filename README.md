@@ -1,7 +1,5 @@
 # TicTacToe 2.0 - Baghli Yacine
 
-### Project: TicTacToe 2.0
-
 The objective was to create a networked game allowing two players to connect to a server and play matches, exchange messages, and use commands.
 
 ### Technical Choices:
