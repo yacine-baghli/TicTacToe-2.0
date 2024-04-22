@@ -1,13 +1,10 @@
 # TicTacToe 2.0 - Baghli Yacine
 
-The objective was to create a networked game allowing two players to connect to a server and play matches, exchange messages, and use commands.
-
-### Technical Choices:
+## Technical Choices:
 
 In this projet, we prefered using the Cloud gaming technique since it would allow different users to play games that may require a significant amount of computing power without needing machines equipped with that computing power, but only requiring a stable internet connection.
 
-
-### Regarding the added features:
+## Regarding the added features:
 
 - Addition of messages explaining the progress of the game
 
@@ -37,10 +34,10 @@ In this projet, we prefered using the Cloud gaming technique since it would allo
 
 - Addition of different commands
 
-### Game Progression:
+## Game Progression:
 At the beginning of the game, the first player must choose whether to play Solo(1) or Duo(2) via a menu.
 
-#### Solo Game
+### Solo Game
 
 The player must then choose the difficulty level of their opponent. Each level has a specific gameplay strategy and a name representing its expertise level in TicTacToe.
 The player must then enter their nickname.
@@ -50,14 +47,14 @@ The scores are displayed at the end of the game, and the player can choose to re
 
 The player can also quit the game at any time by typing "quit".
 
-#### Duo Game
+### Duo Game
 
 If the first player chooses to wait for the second player to connect, they can watch a documentary on black holes or just wait and sleep.
 
 As soon as the second player connects, the game begins. The Duo game proceeds in the same way as a solo game except that players can send messages to each other via commands and can troll each other.
 
 
-### Difficulty Levels:
+## Difficulty Levels:
 
 If you select the "Solo" game mode, you will be prompted to choose the bot's difficulty level.
 There are 4 different difficulty levels:
@@ -75,10 +72,10 @@ If luck is on your side and you manage to make a move before losing, you will st
 
     *(The developers quickly realized that the algorithm was too powerful, so they decided to implement only the first part of it at the Pro and Hacker levels, but you will face the complete version when playing against the last level...)*
 
-### Commands:
+## Commands:
 There are two types of commands:
 
-#### - "Weak" commands:
+### - "Weak" commands:
 
 For a player to use these, they just need to try to place a symbol at (99;99). These commands are as follows:
 
@@ -95,7 +92,7 @@ For a player to use these, they just need to try to place a symbol at (99;99). T
 - By entering the word "quit" at any time during the game, you will exit the game
 
 
-#### - "Powerful" commands:
+### - "Powerful" commands:
 
 For a player to use these, they just need to try to place a symbol at (49;3)
 
@@ -111,5 +108,5 @@ These commands are as follows:
 
 **You cannot use certain commands when playing against advanced bot levels**
 
-### Conclusion:
+## Conclusion:
 TicTacToe 2.0 represents an innovative approach to the classic game, offering enhanced features and interactions for players. Through the implementation of various difficulty levels, networked gameplay, and the addition of powerful commands, the game provides an engaging experience for both solo and duo players. This project not only demonstrates technical proficiency but also highlights the creativity and collaborative effort of the development team.
